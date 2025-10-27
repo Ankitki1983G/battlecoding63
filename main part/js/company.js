@@ -68,7 +68,7 @@ loginForm && (loginForm.onsubmit = function (e) {
        localStorage.setItem("loggedInUser", username);
         alert("🎉 Login Successful!");
         loginForm.reset();
-        window.location.href = "/main content/index.html";
+        window.location.href = "/main content/main_contant.html";
     } else {
         alert("❌ Invalid username or password!");
     }

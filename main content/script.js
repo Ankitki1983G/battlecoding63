@@ -35,9 +35,9 @@ window.addEventListener("DOMContentLoaded", () => {
   // QUIZ CARD CLICKS
   // --------------------
   const quizCards = {
-    "daily-test-card": "/dailyQuiz/index.html",
-    "language-quiz": "/Quiz/index.html",
-    "speed-test": "/speed test/index.html"
+    "daily-test-card": "/dailyQuiz/dailyQuiz.html",
+    "language-quiz": "/Quiz/Quiz.html",
+    "speed-test": "/speed test/speed_test.html"
   };
 
   Object.keys(quizCards).forEach(id => {
@@ -133,7 +133,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Footer navigation
   document.getElementById("footer_test_btn").addEventListener("click", () => {
-    window.location.href = "/dailyQuiz/index.html";
+    window.location.href = "/dailyQuiz/dailyQuiz.html";
   });
   document.getElementById("community_btn").addEventListener("click", () => {
     window.location.href = "/community/community.html";
