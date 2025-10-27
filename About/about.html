@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About — Coding Arena</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .ca-accent {
+            color: #0d6efd;
+        }
+
+        .ca-card {
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(13, 110, 253, 0.08);
+            background: #fff;
+            transition: transform 0.3s;
+        }
+
+        .ca-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: rgba(13, 110, 253, 0.08);
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .feature-icon:hover {
+            background: #0d6efd;
+            color: #fff;
+            transform: scale(1.2);
+        }
+
+        .btn-glow {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-glow::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -75%;
+            width: 50%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: skewX(-25deg);
+            transition: left 0.7s;
+        }
+
+        .btn-glow:hover::after {
+            left: 125%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="about-coding-arena" class="py-5">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="mb-3">About <span class="ca-accent">Coding Arena</span></h1>
+                    <p class="lead">Step into Coding Arena — a vibrant platform where coders learn, compete, and grow
+                        every day. Challenge yourself, play 1v1 battles, and track your coding journey in an interactive
+                        environment.</p>
+
+                    <h5 class="mt-4">Our Mission</h5>
+                    <p>We aim to make coding practice <strong>fun, challenging, and consistent</strong>. From beginners
+                        to experts, everyone can sharpen their skills through gamified quizzes and competitive battles.
+                    </p>
+
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="/login.html" class="btn btn-primary btn-lg btn-glow"><i
+                                class="bi bi-controller me-2"></i>Join the
+                            Arena</a>
+                        <a href="/dailyQuiz/index.html" class="btn btn-outline-secondary btn-lg"><i
+                                class="bi bi-lightning me-2"></i>Try a Daily Quiz</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="card ca-card p-3 h-100 text-center">
+                                <div class="feature-icon mb-2"><i class="bi bi-calendar-day"></i></div>
+                                <strong>Daily Quizzes</strong>
+                                <p class="small text-muted mt-1">Fresh challenges every day to improve your coding
+                                    consistency.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="card ca-card p-3 h-100 text-center">
+                                <div class="feature-icon mb-2"><i class="bi bi-code-square"></i></div>
+                                <strong>Language Practice</strong>
+                                <p class="small text-muted mt-1">Python, JavaScript, C++, Java and more.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="card ca-card p-3 h-100 text-center">
+                                <div class="feature-icon mb-2"><i class="bi bi-lightning-charge"></i></div>
+                                <strong>1v1 Battles</strong>
+                                <p class="small text-muted mt-1">Compete in real-time coding battles and test your
+                                    speed.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="card ca-card p-3 h-100 text-center">
+                                <div class="feature-icon mb-2"><i class="bi bi-bar-chart-line"></i></div>
+                                <strong>Progress & Ranks</strong>
+                                <p class="small text-muted mt-1">Track stats, earn points, and climb the leaderboard.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5" data-aos="fade-up">
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-8">
+                    <h5>Vision & Roadmap</h5>
+                    <p>We’re building a dynamic community for coders worldwide — upcoming features include coding
+                        contests, rewards, badges, and collaboration tools. Every feature is designed to make learning
+                        interactive, fun, and effective.</p>
+                </div>
+                <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                    <small class="text-muted">Contact: <a
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=arenacommunity63@gmail.com"
+                            target="_blank" title="Email us">
+                            <i class="bi bi-envelope"></i> Gmail
+                        </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, easing: 'ease-in-out', once: true });
+    </script>
+</body>
+
+</html>

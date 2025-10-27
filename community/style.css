@@ -1,0 +1,154 @@
+/* Basic layout */
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #f3f6fb;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* App container */
+.chat-container {
+    width: 95%;
+    max-width: 1100px;
+    height: 88vh;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(20, 30, 60, 0.08);
+}
+
+/* Left */
+.user-list {
+    width: 30%;
+    min-width: 230px;
+    border-right: 1px solid #e6e9ef;
+    display: flex;
+    flex-direction: column;
+    background: #fafbfd;
+    overflow-y: auto;
+}
+
+.user-list-header {
+    background: #f7f9fc;
+}
+
+.user-card {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background .12s, transform .08s;
+}
+
+.user-card:hover {
+    background: #eef2f8;
+    transform: translateY(-1px);
+}
+
+.user-card.active {
+    background: #dfe8ff;
+}
+
+.avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Right */
+.chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background: #fff;
+}
+
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    background: linear-gradient(180deg, #fbfcfe, #ffffff);
+}
+
+.msg {
+    max-width: 70%;
+    padding: 8px 12px;
+    border-radius: 12px;
+    margin: 6px 0;
+    word-break: break-word;
+}
+
+.sent {
+    margin-left: auto;
+    background: #0b74ff;
+    color: white;
+}
+
+.received {
+    margin-right: auto;
+    background: #eef1f6;
+    color: #111;
+}
+
+/* small responsiveness */
+@media (max-width:800px) {
+    .chat-container {
+        flex-direction: column;
+        height: 95vh;
+        width: 98%;
+    }
+
+    .user-list {
+        width: 100%;
+        height: 30%;
+        min-width: 0;
+        border-right: none;
+        border-bottom: 1px solid #e6e9ef;
+    }
+
+    .chat-area {
+        height: 70%;
+    }
+}
+
+/* Footer Design */
+.footer {
+    background: #0d1117;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 15px;
+    border-top: 1px solid #222;
+    width: 100%;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 8px;
+}
+
+.footer-icons a {
+    color: #ccc;
+    font-size: 1.8rem;
+    transition: 0.3s;
+}
+
+.footer-icons a:hover {
+    color: #00acee;
+    transform: scale(1.1);
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    color: #aaa;
+}

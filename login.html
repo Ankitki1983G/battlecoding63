@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Battle Quiz</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/main part/css/style.css">
+    <link rel="stylesheet" href="/common file/css/bootstrap.min.css">
+
+    <!-- JS (Bootstrap) -->
+    <script src="/common file/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container bg-white main-box">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">Coding Tracker</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <div class="navbar-nav w-100 justify-content-end">
+                        <a href="#" class="nav-link">Home</a>
+                        <a href="/About/about.html" class="nav-link">About</a>
+                        <a href="/contact/contact.html" class="nav-link">Contact</a>
+                        <a href="#" class="nav-link btn signup-btn bg-info">Sign Up</a>
+                        <a href="#" class="nav-link d-none btn login-btn bg-info">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row">
+            <!-- Login Box -->
+            <div class="col-md-6">
+                <div class="login-box active">
+                    <h1 class="mb-3">Welcome</h1>
+                    <form class="login-form">
+                        <label>Username</label>
+                        <input type="text" required class="form-control login-username mb-3">
+
+                        <label>Password</label>
+                        <input type="password" required class="form-control login-password mb-3">
+
+                        <div class="text-end mb-3">
+                            <a href="#" class="std login">Student Login form</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-danger w-100 mb-3">Sign In</button>
+                    </form>
+                </div>
+                <!-- Signup Box -->
+                <div class="signup-box">
+                    <form class="signup-form">
+                        <label>Name</label>
+                        <input type="text" required class="form-control mb-3">
+
+                        <label>Contact</label>
+                        <input type="tel" required class="form-control mb-3" id="contact" maxlength="10"
+                            placeholder="Enter 10-digit mobile number" pattern="[0-9]{10}">
+
+                        <label>Address</label>
+                        <textarea required class="form-control mb-3"></textarea>
+
+                        <label>Username</label>
+                        <input type="text" required class="form-control mb-3">
+
+                        <label>Password</label>
+                        <input type="password" required class="form-control mb-3">
+
+                        <div class="text-end mb-3">
+                            <a href="#" class="std login">Student Login form</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-danger w-100 mb-3">Sign Up</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-6">
+                <img src="/main part/images.jpg" class="w-100" alt="login image">
+            </div>
+        </div>
+    </div>
+
+    <script src="/main part/js/company.js"></script>
+</body>
+
+</html>

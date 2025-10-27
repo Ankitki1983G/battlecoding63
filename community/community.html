@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Chat (Local)</title>
+
+    <!-- Bootstrap CSS & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal" tabindex="-1" style="display:block;background:rgba(0,0,0,0.4)">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login (Enter your name)</h5>
+                </div>
+                <div class="modal-body">
+                    <input id="loginName" class="form-control" placeholder="Your name (e.g., Ankit)">
+                </div>
+                <div class="modal-footer">
+                    <button id="loginBtn" class="btn btn-primary">Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat App -->
+    <div class="chat-container d-none" id="app">
+        <div class="user-list">
+            <div class="user-list-header d-flex align-items-center justify-content-between p-2 border-bottom">
+                <div>
+                    <strong>Community</strong><br>
+                    <small id="currentUserLabel"></small>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-area d-flex flex-column">
+            <div class="chat-header p-2 border-bottom d-flex justify-content-between align-items-center">
+                <div>
+                    <strong id="chatHeader">Public Chat</strong>
+                    <div class="text-muted small">All users share the same room</div>
+                </div>
+                <button id="logoutBtn" class="btn btn-sm btn-outline-secondary">Logout</button>
+            </div>
+
+            <div id="chatBox" class="chat-box p-3 flex-grow-1"></div>
+
+            <div class="p-3 border-top">
+                <div class="d-flex gap-2">
+                    <input id="messageInput" class="form-control" placeholder="Type message...">
+                    <button id="sendBtn" class="btn btn-primary">Send</button>
+                    <button id="delBtn" class="btn btn-danger" title="Delete all">🗑</button>
+                </div>
+                <div id="statusLine" class="small text-muted mt-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/arenacommunity63" target="_blank" title="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/share/17JNyXFvAV/" target="_blank" title="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://discord.gg/dT6AEUZqM8" target="_blank" title="Decoder">
+                <i class="bi bi-code-slash"></i>
+            </a>
+        </div>
+        <p class="footer-text">© 2025 Local Community Chat</p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arenacommunity63@gmail.com" target="_blank"
+            title="Email us">
+            <i class="bi bi-envelope"></i> Gmail
+        </a>
+    </footer>
+
+    <script src="community.js"></script>
+</body>
+
+</html>
